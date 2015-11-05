@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class CloudController : MonoBehaviour {
-
+	public float speed;
 	// Use this for initialization
 	void Start () {
 
@@ -10,6 +10,6 @@ public class CloudController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position += new Vector3 ((float)0.5* Time.deltaTime, 0, 0) ;
+		transform.position += new Vector3 (speed* Time.deltaTime, 0, 0) ;
 	}
 }
