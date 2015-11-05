@@ -4,6 +4,7 @@ using System.Collections;
 public class StarController : MonoBehaviour {
 	int i=0;
 	public GameObject newstar;
+	public GameObject starhide;
 	// Use this for initialization
 	void Start () {
 		newstar.gameObject.SetActive(false);
@@ -23,8 +24,9 @@ public class StarController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) 
 	{
 		if (other.gameObject.CompareTag ("player"))
-		{
-			this.gameObject.SetActive (false);
+		{	
+			Destroy(this.gameObject);
+			Destroy(starhide.gameObject);
 			newstar.gameObject.SetActive(true);
 		}
 	}
