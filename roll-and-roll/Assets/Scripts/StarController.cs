@@ -1,13 +1,11 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class StarController : MonoBehaviour {
 	int i=0;
-	public GameObject newstar;
+	public GameObject result;
 	// Use this for initialization
 	void Start () {
-		newstar.gameObject.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -21,12 +19,14 @@ public class StarController : MonoBehaviour {
 			i++;
 			}
 	}
+
 	void OnTriggerEnter2D(Collider2D other) 
 	{
-		if (other.gameObject.CompareTag ("player"))
-		{
-			this.gameObject.SetActive (false);
-			newstar.gameObject.SetActive(true);
+		if (other.gameObject.CompareTag ("Player"))
+		{	
+			print ("star");
+			result.BroadcastMessage("GetStar", SendMessageOptions.DontRequireReceiver);
+			Destroy(this.gameObject);
 		}
 	}
 }

@@ -1,12 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\WoodController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\StarController.cs">
     <Files>
-      <File FileName="roll-and-roll.sln" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\StarController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MainController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\WoodController.cs" Line="27" Column="34" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="11" Column="18" />
+      <File FileName="Assets\Scripts\StarController.cs" Line="28" Column="79" />
+      <File FileName="Assets\Scripts\FlagController.cs" Line="18" Column="29" />
+      <File FileName="Assets\Scripts\WoodController.cs" Line="29" Column="3" />
+      <File FileName="Assets\Scripts\ScoreController.cs" Line="10" Column="2" />
+      <File FileName="Assets\Scripts\MainController.cs" Line="9" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
